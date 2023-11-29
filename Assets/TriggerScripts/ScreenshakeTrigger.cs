@@ -9,7 +9,7 @@ public class ScreenshakeTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "PlayerTag")
         {
             timeline.Play();
             Debug.Log("Played Timeline");
